@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende sobre Bitcoin - 21 Bitcoin Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; font-family: "Montserrat", sans-serif; margin: 0; padding: 0; }
+        body { background: #0d0d0d; color: white; overflow-x: hidden; }
+        
+        header { background: #f7931a; text-align: center; padding: 30px 20px; }
+        header h1 { font-size: 36px; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; text-align: center; }
+        .section { margin-bottom: 50px; }
+        .section h2 { font-size: 28px; margin-bottom: 15px; }
+        .section p { font-size: 18px; line-height: 1.6; }
+        
+        .plan-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .plan { background: #222; padding: 20px; border-radius: 10px; width: 300px; text-align: center; transition: 0.3s; cursor: pointer; }
+        .plan:hover { background: #f7931a; transform: scale(1.05); }
+        .plan h3 { font-size: 24px; margin-bottom: 10px; }
+        .plan p { font-size: 18px; margin-bottom: 10px; }
+        .plan button { background: white; color: #f7931a; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .plan button:hover { background: black; color: white; }
+        
+        .bitcoin-float { 
+            position: fixed; 
+            top: 10%; 
+            left: 5%; 
+            width: 50px; 
+            animation: float 3s ease-in-out infinite; 
+            z-index: 999; 
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(15px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprende sobre Bitcoin</h1>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>¿Qué es Bitcoin?</h2>
+            <p>Aquí irá la descripción de Bitcoin que ustedes proporcionen.</p>
+        </section>
+        
+        <section class="section">
+            <h2>¿Qué es 21 Bitcoin Academy?</h2>
+            <p>Aquí irá la información sobre la academia.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Planes de Suscripción</h2>
+            <div class="plan-container">
+                <div class="plan">
+                    <h3>Básico</h3>
+                    <p>Acceso a contenido exclusivo.</p>
+                    <button>Suscribirse</button>
+                </div>
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <p>Acceso total + asesoría personalizada.</p>
+                    <button>Suscribirse</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" class="bitcoin-float" alt="Bitcoin">
+</body>
+</html>

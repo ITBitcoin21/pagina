@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Bitcoin Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; font-family: "Montserrat", sans-serif; }
+        body { margin: 0; padding: 0; background: #f2a900; overflow-x: hidden; position: relative; }
+        hr { width: 80%; margin: 0 auto; border: 1px solid rgba(0, 0, 0, 0.3); }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 840px) { .container { margin: 0 20px; } }
+
+        header { background: #f7931a; min-height: 100vh; margin-bottom: 80px; position: relative; overflow: hidden; }
+        header nav .container { height: 100px; display: flex; justify-content: space-between; align-items: center; }
+        header nav .brand { color: white; font-weight: bold; font-size: 24px; }
+        header nav .menu { margin: 0; padding: 0; list-style: none; display: flex; justify-content: center; align-items: center; }
+        header nav .menu li { padding: 10px; }
+        header nav .menu a { color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease; }
+        header nav .menu a.active, header nav .menu a:hover { color: white; cursor: pointer; }
+
+        header .hero { height: calc(100vh - 200px); display: flex; justify-content: center; align-items: flex-start; flex-direction: column; position: relative; }
+        header .title { width: 50%; margin: 0; color: white; z-index: 1; }
+        header .title h1 { font-size: 40px; }
+        header .title h2 { margin-bottom: 10px; font-size: 32px; }
+
+        .verMas { position: absolute; bottom: 30px; right: 50%; transform: translateX(-50%); color: rgba(255, 255, 255, 0.8); font-size: 30px; }
+
+        section { padding: 60px 20px; }
+        .service-card { border: 2px solid #f7931a; border-radius: 12px; padding: 20px; margin: 20px 0; text-align: center; }
+
+        footer { padding: 40px; background: #f7931a; color: white; }
+        footer .container { display: flex; justify-content: space-between; align-items: flex-start; }
+        footer ul { margin: 0; padding: 0; list-style: none; }
+        footer ul li { margin-bottom: 10px; }
+        footer ul li a { color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease; }
+        footer ul li a:hover { color: white; }
+
+        @media (max-width: 629px) {
+            footer .container { flex-direction: column; }
+            footer ul { margin-bottom: 20px; }
+        }
+
+        /* Animación del Bitcoin flotante */
+        .floating-bitcoin {
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            animation: floatBitcoin 20s linear infinite;
+            opacity: 0.2;
+            width: 150px;
+            z-index: 0;
+        }
+
+        @keyframes floatBitcoin {
+            0% { transform: translateY(0) translateX(-50%) rotate(0deg); }
+            50% { transform: translateY(-800px) translateX(-50%) rotate(180deg); }
+            100% { transform: translateY(0) translateX(-50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <span class="noWrap brand"><i class="fa fa-btc"></i> 21 Bitcoin Academy</span>
+                <ul class="menu">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <!-- li><a href="#herramientas">Herramientas</a></li-->
+                    <li><a href="/Home/Aprende.html">Aprender</a></li>
+                    <!--li><a href="#tienda">Tienda</a></li-->
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="title">
+                <h2>Bienvenido a <span class="noWrap"><i class="fa fa-btc"></i> 21 Bitcoin Academy</span></h2>
+                <h1>Aprende y gestiona Bitcoin de forma segura</h1>
+            </div>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="Bitcoin" class="floating-bitcoin">
+    </header>
+
+    <section id="aprender" class="container">
+        <h2>Aprender sobre Bitcoin</h2>
+        <p>Explora nuestros recursos gratuitos y accede a nuestra comunidad para contenido exclusivo.</p>
+        <a href="https://www.youtube.com/@21BitcoinAcademy" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+    </section>
+
+    <section id="news" class="container">
+        <h2>News</h2>
+        <p>Entérate de las últimas novedades del mundo Bitcoin y de nuestros servicios.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li>Fundadores</li>
+                <li><a href="https://x.com/jrbtc97" target="_blank"><i class="fab fa-x-twitter"></i> Junior</a></li>
+                <li><a href="https://x.com/BTCyberpunk" target="_blank"><i class="fab fa-x-twitter"></i> Kike</a></li>
+            </ul>
+            <ul>
+                <li>Contacto</li>
+                <li><a href="mailto:info@21BitcoinAcademy.com">info@21BitcoinAcademy.com</a></li>
+            </ul>
+            <ul>
+                <li>Redes Sociales</li>
+                <li><a href="https://www.youtube.com/@21BitcoinAcademy" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+            </ul>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">Creado por Navidad_CR: @Navidad_CR</p>
+    </footer>
+</body>
+</html>
